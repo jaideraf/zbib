@@ -1,0 +1,393 @@
+[
+    {
+        "title": "Unesp",
+        "zurl": "unesp.alma.exlibrisgroup.com:1921/55unesp_inst",
+        "flag": "img/brazil-flag-icon-16.png",
+        "default": true
+    },
+    {
+        "title": "USP",
+        "zurl": "dedalus.usp.br:9991/usp01",
+        "flag": "img/brazil-flag-icon-16.png",
+        "default": true
+    },
+    {
+        "title": "UFSC",
+        "zurl": "pergamum.ufsc.br:9999/default",
+        "flag": "img/brazil-flag-icon-16.png",
+        "default": true
+    },
+    {
+        "title": "Wikincat",
+        "zurl": "localhost:9999/bib",
+        "flag": "img/brazil-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Universidade de Coimbra, Portugal",
+        "zurl": "webopac.sib.uc.pt:210/innopac",
+        "flag": "img/portugal-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Biblioteca Nacional de Portugal (UNIMARC)",
+        "zurl": "catalogo.bnportugal.gov.pt:210/bn",
+        "syntax": "unimarc",
+        "charset": "marc-8",
+        "flag": "img/portugal-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Library of Congress, EUA",
+        "zurl": "lx2.loc.gov:210/lcdb",
+        "flag": "img/united-states-of-america-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "National Library of Medicine, EUA",
+        "zurl": "ilsz3950.nlm.nih.gov:7091/voyager",
+        "charset": "marc-8",
+        "flag": "img/united-states-of-america-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Harvard University, EUA",
+        "zurl": "hvd.alma.exlibrisgroup.com:1921/01hvd_inst",
+        "userpass": "z39/harvard",
+        "flag": "img/united-states-of-america-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Massachusetts Institute of Technology, EUA",
+        "zurl": "library.mit.edu:9909/mit01pub",
+        "charset": "marc-8",
+        "flag": "img/united-states-of-america-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Yale University, EUA",
+        "zurl": "z3950.library.yale.edu:7090/voyager",
+        "charset": "marc-8",
+        "flag": "img/united-states-of-america-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Southern University at New Orleans, EUA",
+        "zurl": "suno.louislibraries.org:7705/unicorn",
+        "flag": "img/united-states-of-america-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Penn State University, EUA",
+        "zurl": "zcat.libraries.psu.edu:2200/unicorn",
+        "flag": "img/united-states-of-america-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Chicago University, EUA",
+        "zurl": "ole.uchicago.edu:210/ole",
+        "flag": "img/united-states-of-america-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "University of Michigan-Flint, EUA",
+        "zurl": "z3950.lib.umich.edu:210/miu01_pub",
+        "flag": "img/united-states-of-america-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "New York State Library, EUA ",
+        "zurl": "nyst.sirsi.net:8419/unicorn",
+        "flag": "img/united-states-of-america-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Fletcher Technical Community College, EUA",
+        "zurl": "fletcher.louislibraries.org:8205/unicorn",
+        "flag": "img/united-states-of-america-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "University of Toronto, Canadá",
+        "zurl": "sirsi.library.utoronto.ca:2200/unicorn",
+        "flag": "img/canada-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "University of British Columbia, Canadá",
+        "zurl": "ils.library.ubc.ca:7090/voyager",
+        "charset": "marc-8",
+        "flag": "img/canada-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Victoria University, Canadá",
+        "zurl": "voyager.library.uvic.ca:7090/voyager",
+        "charset": "marc-8",
+        "flag": "img/canada-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Oxford University, UK",
+        "zurl": "library.ox.ac.uk:210/aleph",
+        "flag": "img/united-kingdom-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "National Library of Scotland, Escócia",
+        "zurl": "nls.alma.exlibrisgroup.com:210/44nls_inst",
+        "flag": "img/scotland-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "National Library of Australia, Austrália",
+        "zurl": "catalogue.nla.gov.au:7090/voyager",
+        "charset": "marc-8",
+        "flag": "img/australia-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Christchurch City Libraries, Nova Zelândia",
+        "zurl": "aleph.nkp.cz:9991/cnb-utf",
+        "flag": "img/new-zealand-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Biblioteca Nacional de España, Espanha",
+        "zurl": "sigb.bne.es:2200/unicorn",
+        "flag": "img/spain-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Universidad de Zaragoza, Espanha",
+        "zurl": "roble.unizar.es:210/innopac",
+        "flag": "img/spain-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Biblioteca de Castilla y León, Espanha",
+        "zurl": "217.71.16.226:210/absysbcl",
+        "charset": "marc-8",
+        "flag": "img/spain-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Biblioteca Foral de Bizkaia, Espanha",
+        "zurl": "bibliotecaforal.bizkaia.net:210/innopac",
+        "flag": "img/spain-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Aladí: Barcelona Municipal Libraries Network, Espanha",
+        "zurl": "sinera.diba.cat:210/innopac",
+        "flag": "img/spain-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Universitat Oberta de Catalunya, Espanha",
+        "zurl": "uoc.cbuc.cat:210/innopac",
+        "flag": "img/spain-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Biblioteca Nacional da Argentina",
+        "zurl": "190.136.33.233:9991/bna01",
+        "userpass": "Z39.50/Z39.50",
+        "flag": "img/argentina-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "CEDINCI, Argentina",
+        "zurl": "catalogo.cedinci.org:9999/biblios",
+        "flag": "img/argentina-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Biblioteca del Hospital Garrahan, Argentina",
+        "zurl": "catalogo.garrahan.edu.ar:9999/biblios",
+        "flag": "img/argentina-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Universidade Nacional de Colombia, Colômbia",
+        "zurl": "168.176.5.96:9991/snb01",
+        "charset": "marc-8",
+        "flag": "img/colombia-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Biblioteca Luis Ángel Arango, Colômbia",
+        "zurl": "ticuna.banrep.gov.co:7090/abnet_db",
+        "flag": "img/colombia-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Pontificia Universidad Javeriana, Colômbia",
+        "zurl": "unicornio.javeriana.edu.co:2200/unicorn",
+        "charset": "marc-8",
+        "flag": "img/colombia-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Red de Bibliotecas Medellín, Colômbia",
+        "zurl": "rbmam.janium.net:210/Janium",
+        "charset": "marc-8",
+        "flag": "img/colombia-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Colegio Nueva Granada, Colômbia",
+        "zurl": "cng.follettdestiny.com:210/saas02_8500006",
+        "flag": "img/colombia-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Colegio Americano de Quito, Equador",
+        "zurl": "fcaqlibrary.follettdestiny.com:210/saas55_8501430",
+        "charset": "marc-8",
+        "flag": "img/ecuador-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Macris School, Honduras",
+        "zurl": "macris.follettdestiny.com:210/saas17_8503119",
+        "charset": "marc-8",
+        "flag": "img/honduras-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Benemérita Universidad Autónoma de Puebla, México",
+        "zurl": "www.bibliocatalogo.buap.mx:210/innopac",
+        "flag": "img/mexico-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Universidade de Porto Rico",
+        "zurl": "uprhip.upr.edu:210/uprbib",
+        "flag": "img/puerto-rico-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Instituto de Estudios Superiores de Administración, Venezuela",
+        "zurl": "iesa.sirsi.net:2500/unicorn",
+        "flag": "img/venezuela-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Servizio Bibliotecario Nazionale, Itália",
+        "zurl": "opac.sbn.it:3950/nopac",
+        "flag": "img/italy-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Università di Padova, Itália",
+        "zurl": "catalogo.unipd.it:9991/sbp01",
+        "flag": "img/italy-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Agence Bibliographique de l'Enseignement Supérieur, França",
+        "zurl": "carmin.sudoc.abes.fr:10646/abes-z39-public",
+        "flag": "img/france-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Universiteit Gent, Bélgica",
+        "zurl": "aleph.ugent.be:9991/rug01",
+        "flag": "img/belgium-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Cooperative library network Berlin-Brandenburg (KOBV), Alemanha",
+        "zurl": "z3950.kobv.de:210/k2",
+        "flag": "img/germany-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Technical University Brandenburg, Alemanha",
+        "zurl": "z3950.kobv.de:9991/u-kbv90",
+        "flag": "img/germany-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Braunschweig-Wolfenbüttel University of Applied Sciences, Alemanha",
+        "zurl": "z3950.gbv.de:210/gvk",
+        "flag": "img/germany-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "German Union Catalogue of Serials (ZDB), Alemanha",
+        "zurl": "z3950.dnb.de:210/zdb",
+        "flag": "img/germany-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Network of libraries and information centers in Switzerland, Suíça",
+        "zurl": "opac.nebis.ch:9909/nebis",
+        "charset": "marc-8",
+        "flag": "img/switzerland-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Library Network of Western Switzerland, Suíça",
+        "zurl": "virtua.z3950.rero.ch:3950/default",
+        "flag": "img/switzerland-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "National Library of Sweden, Suécia",
+        "zurl": "z3950.libris.kb.se:210/libr",
+        "flag": "img/sweden-flag-icon-16.png",
+        "charset": "marc-8",
+        "default": false
+    },
+    {
+        "title": "National Library of the Czech Republic, República Tcheca",
+        "zurl": "aleph.nkp.cz:9991/cnb-utf",
+        "flag": "img/czech-republic-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "National Library of Greece, Grécia (UNIMARC)",
+        "zurl": "z3950.nlg.gr:210/biblios",
+        "syntax": "unimarc",
+        "flag": "img/greece-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Russian State Library, Rússia",
+        "zurl": "aleph.rsl.ru:9909/rsl01",
+        "flag": "img/russia-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Bashkir State University, Rússia",
+        "zurl": "62.76.8.149:210/books",
+        "flag": "img/russia-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Koç University, Turquia",
+        "zurl": "libunix.ku.edu.tr:210/innopac",
+        "flag": "img/turkey-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Monash South Africa, África do Sul",
+        "zurl": "ap01.alma.exlibrisgroup.com:1921/61monash_sa",
+        "flag": "img/south-africa-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Hong Kong Shue Yan University, Hong Kong",
+        "zurl": "lib.hksyu.edu.hk:210/innopac",
+        "flag": "img/hongkong-flag-icon-16.png",
+        "default": false
+    },
+    {
+        "title": "Chung Yuan Christian University, Taiwan",
+        "zurl": "164.100.38.6:1111/default",
+        "flag": "img/taiwan-flag-icon-16.png",
+        "default": false
+    }
+]
