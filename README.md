@@ -12,7 +12,7 @@ Clone this repository:
 git clone https://github.com/jaideraf/zbib.git
 ```
 
-And rename the targets.json file:
+And rename the <code>targets.json</code> file:
 
 ```Shell
 cd zbib
@@ -20,7 +20,7 @@ mv targets.json.example targets.json
 ```
 
 ## Configuration
-Configure targets.json objects as you wish. You can use the following properties: 
+Configure <code>targets.json</code> objects as you wish. You can use the following properties: 
 * <code>title</code>: the title of the Z39.50 target
 * <code>zurl</code>: the host, port and database in the format "host:port/database"
 * <code>userpass</code>: the user and password in the format "user/password"
