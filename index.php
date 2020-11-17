@@ -22,19 +22,19 @@
     <meta name="description" content="Interface de busca de registros bibliográficos do Wikincat usando o protocolo Z39.50">
     <meta name="author" content="jaideraf">
     <meta name="author" content="vitorsilverio">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:url" content="https://wikincat.org/zbib/">
     <meta property="og:title" content="Busca Z39.50 do Wikincat">
     <meta property="og:description" content="Interface de busca de registros bibliográficos do Wikincat usando o protocolo Z39.50">
     <meta property="og:image" content="https://wikincat.org/static-only/wikincat/img/z3950-image.png">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:url" content="https://wikincat.org/zbib/">
     <meta property="twitter:title" content="Busca Z39.50 do Wikincat">
     <meta property="twitter:description" content="Interface de busca de registros bibliográficos do Wikincat usando o protocolo Z39.50">
     <meta property="twitter:image" content="https://wikincat.org/static-only/wikincat/img/z3950-image.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bfc016c9fd.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -249,7 +249,7 @@
             </div>
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script>
         Array.from(document.getElementsByClassName('form-check-input')).forEach(function(c) {
