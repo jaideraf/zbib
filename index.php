@@ -108,7 +108,7 @@
                 <div class="alert alert-info" role="alert" style="display: <?= $searchString!=''?'none':'block' ?>" >
                     <ul style="margin-bottom: 0">
                         <li>Utilize um <a class="alert-link" data-toggle="collapse" data-target="#extra">operador booleano</a> para um resultado mais preciso.</li>
-                        <li>Busque em até 5 bibliotecas por vez.</li>
+                        <li>Busque em até 5 bibliotecas por vez (são mais de 60 disponíveis).</li>
                         <li>A remoção de acentos pode trazer mais resultados.</li>
                     </ul>
                 </div>
@@ -245,7 +245,7 @@
         <br>
         <footer>
             <div class="d-flex align-items-center justify-content-center">
-            <a href="https://wikincat.org/" target="_blank">Wikincat</a>, 2020. Creative Commons (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR" target="_blank">CC-BY-SA 4.0</a>)
+                <p><a href="https://wikincat.org/" target="_blank">Wikincat</a>, 2020. Creative Commons (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR" target="_blank">CC-BY-SA 4.0</a>)</p>
             </div>
         </footer>
     </div>
