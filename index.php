@@ -66,13 +66,13 @@
                         </select>
                     </div>
                     <div class="form-group align-bottom d-flex align-items-end mr-2">
-                        <button class="btn btn-primary">Buscar</button>
+                        <button class="btn btn-primary" title="Executa a busca">Buscar</button>
                     </div>
                     <div class="form-group align-bottom d-flex align-items-end mr-2">
-                        <a class="btn btn-link" data-toggle="collapse" data-target="#extra">▼ / ▲</a>
+                        <a class="btn btn-link" data-toggle="collapse" data-target="#extra" title="Exibe ou esconde o operador booleano">▼ / ▲</a>
                     </div>
                     <div class="form-group align-bottom d-flex align-items-end mr-2">
-                        <a class="btn btn-link" href="https://wikincat.org/zbib/">Início</a>
+                        <a class="btn btn-link" href="https://wikincat.org/zbib/" title="Vai para a página inicial">Início</a>
                     </div>
                 </div>
                 <div class="form-row <?= $searchString2!=''?'':'collapse' ?>" id="extra">
@@ -107,7 +107,7 @@
                 </div>
                 <div class="alert alert-info" role="alert" style="display: <?= $searchString!=''?'none':'block' ?>" >
                     <ul style="margin-bottom: 0">
-                        <li>Utilize um <a class="alert-link" data-toggle="collapse" data-target="#extra">operador booleano</a> para um resultado mais preciso.</li>
+                        <li>Utilize um <a class="alert-link" data-toggle="collapse" data-target="#extra" title="Exibe ou esconde o operador booleano">operador booleano</a> para um resultado mais preciso.</li>
                         <li>Busque em até 5 bibliotecas por vez (são mais de 60 disponíveis).</li>
                         <li>A remoção de acentos pode trazer mais resultados.</li>
                     </ul>
@@ -115,12 +115,13 @@
                 <div class="form-row mb-2">
                     <div class="card col-md-12">
                         <div class="card-header">
-                            <a class="btn btn-link" data-toggle="collapse" data-target="#targets">
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M3.204 5L8 10.481 12.796 5H3.204zm-.753.659l4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
-                                </svg>
-                                Bibliotecas
-                            </a>
+                            <p style="margin-bottom: 0">
+                                <a class="btn btn-link" data-toggle="collapse" data-target="#targets" title="Exibe ou esconde as bibliotecas">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M3.204 5L8 10.481 12.796 5H3.204zm-.753.659l4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                                    </svg> Bibliotecas
+                                </a>
+                            </p>
                         </div>
                         <div class="card-body <?= $searchString!=''?'collapse':'' ?>" id="targets">
                         <?php
@@ -172,7 +173,7 @@
                                             <span class="badge badge-pill badge-secondary">Resultado <?= $index + 1 + $pageSize * $page ?></span>
                                         </div>
                                         <div class="float-right">
-                                            <button class="btn btn-link" onclick="copy(this);"><i class="far fa-copy"> </i> Copiar registro</button>
+                                            <button class="btn btn-link" onclick="copy(this);" title="Executa uma cópia do registro MARC"><i class="far fa-copy" alt="Ícone de copiar"> </i> Copiar registro</button>
                                             <form name="toWikincat" action="https://wikincat.org/w/index.php?title=Wikincat%3AMARCimporter" method="post">
                                                 <input type="hidden" name="wpRunQuery" value="Preparar registro"/>
                                                 <input type="hidden" name="MARCimporter[type]" value="Registro bibliográfico"/>
@@ -215,7 +216,7 @@
             <nav>
             <ul class="pagination flex-wrap">
                 <li class="page-item">
-                <a class="page-link" href="<?= $params.($page-1) ?>" aria-label="Anterior">
+                <a class="page-link" href="<?= $params . ($page-1) ?>" aria-label="Anterior">
                     <span aria-hidden="true">&laquo;</span>
                     <span class="sr-only">Anterior</span>
                 </a>
@@ -225,13 +226,13 @@
                     $offsetedPage = (intval($page/10)*10)+$p+1;
                     if ($offsetedPage < $maxPages) {
                         ?>
-                        <li class="page-item <?= ($page)==($offsetedPage-1)?'active':'' ?>"><a class="page-link" href="<?= $params.($offsetedPage-1) ?>"><?= $offsetedPage ?></a></li>
+                        <li class="page-item <?= ($page)==($offsetedPage-1)?'active':'' ?>"><a class="page-link" href="<?= $params . ($offsetedPage-1) ?>"><?= $offsetedPage ?></a></li>
                         <?php
                     }
                 }
                 ?>
                 <li class="page-item">
-                <a class="page-link" href="<?= $params.($page+1) ?>" aria-label="Próximo">
+                <a class="page-link" href="<?= $params . ($page+1) ?>" aria-label="Próximo">
                     <span aria-hidden="true">&raquo;</span>
                     <span class="sr-only">Próximo</span>
                 </a>
