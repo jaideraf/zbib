@@ -46,7 +46,7 @@ function formatterRecordToPresentation($record)
     $subst5 = $subst4; 
     $pattern6 = '/(^00\d\s)/m';             // Pergamum style control fields
     $subst6 = '$1   ';
-    $pattern7 = '/^(26[04])(.*)/m';   // highlight the publication info
+    $pattern7 = '/^(26[04])(.*)/m';         // highlight the publication info
     $subst7 = '<span style="border: 2px solid #457bff; border-radius: .2rem"><b>$1</b>$2</span>';
     $pattern8 = '/(^\d{3}\s|\n\d{3}\s)/';   // bold field tag
     $subst8 = '<b>$1</b>';

@@ -164,7 +164,7 @@ Utilize <kbd><kbd>ctrl</kbd> + <kbd>f</kbd></kbd> para localizar dentro dos resu
                     </div>
                     <div id="collapse<?= $index ?>" class="collapse" data-parent="#accordion">
                         <div class="card-body">
-                            <ul class="list-group context">
+                            <ul class="list-group">
                                 <?php
                                 foreach ($target->results as $index => $result) {
                                     ?>
