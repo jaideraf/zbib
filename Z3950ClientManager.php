@@ -30,6 +30,7 @@ $searchTypes = array(
     '4'     => 'título',
     '1003'  => 'autor',
     '21'    => 'assunto',
+    '30'    => 'ano',
     '8'     => 'ISBN',
     '7'     => 'ISSN',
     '1016'  => 'qualquer campo'

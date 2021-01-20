@@ -105,12 +105,13 @@
                         </select>
                     </div>
                 </div>
-                <div class="alert alert-info" role="alert" style="display: <?= $searchString!=''?'none':'block' ?>" >
-                    <ul style="margin-bottom: 0">
-                        <li>Utilize um <a class="alert-link" data-toggle="collapse" data-target="#extra" title="Exibe ou esconde o operador booleano">operador booleano</a> para um resultado mais preciso.</li>
-                        <li>Busque em até 5 bibliotecas por vez (são mais de 60 disponíveis).</li>
-                        <li>A remoção de acentos pode trazer mais resultados.</li>
-                    </ul>
+                <div class="alert alert-info" role="alert" ><?= $searchString!=''?'
+Utilize <kbd><kbd>ctrl</kbd> + <kbd>f</kbd></kbd> para localizar dentro dos resultados.':'
+<ul style="margin-bottom: 0">
+    <li>Busque em até 5 bibliotecas por vez (são mais de 60 disponíveis).</li>
+    <li>Utilize um <a class="alert-link" data-toggle="collapse" data-target="#extra" title="Exibe ou esconde o operador booleano">operador booleano</a> para resultados mais precisos.</li>
+    <li>A remoção de acentos pode trazer mais resultados.</li>
+</ul>' ?>
                 </div>
                 <div class="form-row mb-2">
                     <div class="card col-md-12">
@@ -163,7 +164,7 @@
                     </div>
                     <div id="collapse<?= $index ?>" class="collapse" data-parent="#accordion">
                         <div class="card-body">
-                            <ul class="list-group">
+                            <ul class="list-group context">
                                 <?php
                                 foreach ($target->results as $index => $result) {
                                     ?>
@@ -173,7 +174,7 @@
                                             <span class="badge badge-pill badge-secondary">Resultado <?= $index + 1 + $pageSize * $page ?></span>
                                         </div>
                                         <div class="float-right">
-                                            <button class="btn btn-link" onclick="copy(this);" title="Executa uma cópia do registro MARC"><i class="far fa-copy" alt="Ícone de copiar"> </i> Copiar registro</button>
+                                            <button class="btn btn-link" onclick="copy(this);" title="Executa uma cópia do registro MARC"><i class="far fa-copy" alt="Ícone de copiar"> </i> Copiar registro</button> <kbd><kbd>ctrl</kbd> + <kbd>c</kbd></kbd>
                                             <form name="toWikincat" action="https://wikincat.org/w/index.php?title=Wikincat%3AMARCimporter" method="post">
                                                 <input type="hidden" name="wpRunQuery" value="Preparar registro"/>
                                                 <input type="hidden" name="MARCimporter[type]" value="Registro bibliográfico"/>
@@ -246,7 +247,7 @@
         <br>
         <footer>
             <div class="d-flex align-items-center justify-content-center">
-                <p><a href="https://wikincat.org/" target="_blank">Wikincat</a>, 2020. Creative Commons (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR" target="_blank">CC-BY-SA 4.0</a>)</p>
+                <p><a href="https://wikincat.org/" target="_blank">Wikincat</a>, 2021. Creative Commons (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR" target="_blank">CC-BY-SA 4.0</a>)</p>
             </div>
         </footer>
     </div>

@@ -7,7 +7,7 @@
      * 
      * @category Z39.50
      * @package  Zbib
-     * @author   jaideraf <jaideraf@gamil.com>
+     * @author   jaideraf <jaideraf@gmail.com>
      * @author   Vítor S Rodrigues <vitor.silverio.rodrigues@gmail.com>
      * @license  https://www.gnu.org/licenses/gpl-3.0.txt GNU/GPLv3
      * @link     https://wikincat.org/zbib/
@@ -46,8 +46,10 @@ function formatterRecordToPresentation($record)
     $subst5 = $subst4; 
     $pattern6 = '/(^00\d\s)/m';             // Pergamum style control fields
     $subst6 = '$1   ';
-    $pattern7 = '/(^\d{3}\s|\n\d{3}\s)/';   // bold field tag
-    $subst7 = '<b>$1</b>';
+    $pattern7 = '/^(26[04])(.*)/m';   // highlight the publication info
+    $subst7 = '<span style="border: 2px solid #457bff; border-radius: .2rem"><b>$1</b>$2</span>';
+    $pattern8 = '/(^\d{3}\s|\n\d{3}\s)/';   // bold field tag
+    $subst8 = '<b>$1</b>';
 
     $result = preg_replace($pattern0, $subst0, $result);
     $result = preg_replace($pattern1, $subst1, $result);
@@ -57,6 +59,7 @@ function formatterRecordToPresentation($record)
     $result = preg_replace($pattern5, $subst5, $result);
     $result = preg_replace($pattern6, $subst6, $result);
     $result = preg_replace($pattern7, $subst7, $result);
+    $result = preg_replace($pattern8, $subst8, $result);
 
     return $result;
 }
