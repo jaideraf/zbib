@@ -36,6 +36,72 @@
     <meta property="twitter:image" content="https://wikincat.org/static-only/wikincat/img/z3950-image.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bfc016c9fd.js" crossorigin="anonymous"></script>
+    <style>
+        #back-to-top-button {
+            display: inline-block;
+            background-color: #457bff7a;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border-radius: .2rem;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            transition: background-color .3s, 
+                opacity .5s, visibility .5s;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+        #back-to-top-button::after {
+            content: "\f077";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 2em;
+            line-height: 50px;
+            color: #fff;
+        }
+        #back-to-top-button:hover {
+            cursor: pointer;
+            background-color: #333;
+        }
+        #back-to-top-button:active {
+            background-color: #555;
+        }
+        #back-to-top-button.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Styles for the content section */
+
+        .content {
+            width: 77%;
+            margin: 50px auto;
+            font-family: 'Merriweather', serif;
+            font-size: 17px;
+            color: #6c767a;
+            line-height: 1.9;
+        }
+        @media (min-width: 500px) {
+            .content {
+                width: 43%;
+            }
+            #back-to-top-button {
+                margin: 15px;
+            }
+        }
+        .content h1 {
+        margin-bottom: -10px;
+        color: #03a9f4;
+        line-height: 1.5;
+        }
+        .content h3 {
+        font-style: italic;
+        color: #96a2a7;
+        }
+    </style>
 </head>
 <body>
     <?php
@@ -72,7 +138,7 @@
                         <a class="btn btn-link" data-toggle="collapse" data-target="#extra" title="Exibe ou esconde o operador booleano">▼ / ▲</a>
                     </div>
                     <div class="form-group align-bottom d-flex align-items-end mr-2">
-                        <a class="btn btn-link" href="https://wikincat.org/zbib/" title="Vai para a página inicial">Início</a>
+                        <a class="btn btn-link" href="https://wikincat.org/zbib/" title="Vai para a página inicial">Início</a> <a id="back-to-top-button" title="Vai para o topo"></a>
                     </div>
                 </div>
                 <div class="form-row <?= $searchString2!=''?'':'collapse' ?>" id="extra">
@@ -106,7 +172,7 @@
                     </div>
                 </div>
                 <div class="alert alert-info" role="alert" ><?= $searchString!=''?'
-Utilize <kbd><kbd>ctrl</kbd> + <kbd>f</kbd></kbd> para localizar dentro dos resultados.':'
+Utilize <kbd class="bg-secondary"><kbd class="bg-secondary">ctrl</kbd> + <kbd class="bg-secondary">f</kbd></kbd> para localizar dentro dos resultados.':'
 <ul style="margin-bottom: 0">
     <li>Busque em até 5 bibliotecas por vez (são mais de 60 disponíveis).</li>
     <li>Utilize um <a class="alert-link" data-toggle="collapse" data-target="#extra" title="Exibe ou esconde o operador booleano">operador booleano</a> para resultados mais precisos.</li>
@@ -174,13 +240,13 @@ Utilize <kbd><kbd>ctrl</kbd> + <kbd>f</kbd></kbd> para localizar dentro dos resu
                                             <span class="badge badge-pill badge-secondary">Resultado <?= $index + 1 + $pageSize * $page ?></span>
                                         </div>
                                         <div class="float-right">
-                                            <button class="btn btn-link" onclick="copy(this);" title="Executa uma cópia do registro MARC"><i class="far fa-copy" alt="Ícone de copiar"> </i> Copiar registro</button> <kbd><kbd>ctrl</kbd> + <kbd>c</kbd></kbd>
+                                            <button class="btn btn-link" onclick="copy(this);" title="Executa uma cópia do registro MARC"><i class="far fa-copy" title="Ícone de copiar"> </i> Copiar registro</button> <kbd class="bg-secondary"><kbd class="bg-secondary">ctrl</kbd> + <kbd class="bg-secondary">c</kbd></kbd>
                                             <form name="toWikincat" action="https://wikincat.org/w/index.php?title=Wikincat%3AMARCimporter" method="post">
                                                 <input type="hidden" name="wpRunQuery" value="Preparar registro"/>
                                                 <input type="hidden" name="MARCimporter[type]" value="Registro bibliográfico"/>
                                                 <input type="hidden" name="MARCimporter[map_field][type]" value="true"/>
                                                 <input type="hidden" name="MARCimporter[NFD][is_checkbox]" value="true"/>
-                                                <input type="hidden" name="MARCimporter[record]" id="MARCimporter[record]" value="<?= formatterRecordToWikincat($result) ?>"/>
+                                                <input type="hidden" name="MARCimporter[record]" value="<?= formatterRecordToWikincat($result) ?>"/>
                                                 <input type="hidden" name="pfRunQueryFormName" value="MARCimporter"/>
                                                 <button class="btn btn-info btn-sm">Enviar para Wikincat (requer login)</button>
                                             </form>
@@ -188,7 +254,7 @@ Utilize <kbd><kbd>ctrl</kbd> + <kbd>f</kbd></kbd> para localizar dentro dos resu
                                     </div>
                                     <br>
                                     <div class="mt-2 mb-2">
-                                        <pre><?= formatterRecordToPresentation($result) ?></pre>
+                                        <pre style="white-space: pre-wrap"><?= formatterRecordToPresentation($result) ?></pre>
                                     </div>
                                     </li>
                                     <?php
@@ -209,7 +275,7 @@ Utilize <kbd><kbd>ctrl</kbd> + <kbd>f</kbd></kbd> para localizar dentro dos resu
             $activeTargets = "";
             foreach ($targets as $index => $target) {
                 if ($target['active']) {
-                    $activeTargets = $activeTargets . sprintf("&targets[%s]=on", $index);
+                    $activeTargets = $activeTargets . "&targets%5B" . $index . "%5D=on";
                 }
             }
             $params = sprintf("?searchString=%s&searchType=%s&searchString2=%s&searchType2=%s&operator=%s%s&page=", $searchString, $searchType, $searchString2, $searchType2, $operator, $activeTargets);
@@ -277,6 +343,21 @@ Utilize <kbd><kbd>ctrl</kbd> + <kbd>f</kbd></kbd> para localizar dentro dos resu
                 console.log(e);
             }
         }
+
+        var btn = $('#back-to-top-button');
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '300');
+        });
     </script>
 </body>
 </html>
