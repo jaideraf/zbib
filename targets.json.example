@@ -93,12 +93,14 @@
         "title": "University of Michigan-Flint, EUA",
         "zurl": "z3950.lib.umich.edu:210/miu01_pub",
         "flag": "img/united-states-of-america-flag-icon-16.png",
+        "charset": "marc-8",
         "default": false
     },
     {
         "title": "New York State Library, EUA ",
         "zurl": "nyst.sirsi.net:8419/unicorn",
         "flag": "img/united-states-of-america-flag-icon-16.png",
+        "charset": "marc-8",
         "default": false
     },
     {

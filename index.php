@@ -105,6 +105,8 @@
 </head>
 <body>
     <?php
+    // Report all errors except E_WARNING e E_NOTICE
+    error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
     require_once "Z3950ClientManager.php";
     require_once "formatter.php";
     ?>

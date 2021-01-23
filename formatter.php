@@ -61,6 +61,6 @@ function formatterRecordToPresentation($record)
     $result = preg_replace($pattern7, $subst7, $result);
     $result = preg_replace($pattern8, $subst8, $result);
 
-    return $result;
+    return normalizer_normalize( $result, Normalizer::FORM_C );
 }
 ?>
