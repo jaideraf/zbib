@@ -12,18 +12,6 @@
         "default": true
     },
     {
-        "title": "UFSC",
-        "zurl": "pergamum.ufsc.br:9999/default",
-        "flag": "img/brazil-flag-icon-16.png",
-        "default": true
-    },
-    {
-        "title": "Wikincat",
-        "zurl": "localhost:9999/bib",
-        "flag": "img/brazil-flag-icon-16.png",
-        "default": false
-    },
-    {
         "title": "Universidade de Coimbra, Portugal",
         "zurl": "webopac.sib.uc.pt:210/innopac",
         "flag": "img/portugal-flag-icon-16.png",

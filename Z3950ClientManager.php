@@ -15,7 +15,7 @@
 $pageSize = 10;
 define('PAGESIZE', $pageSize);
 
-$targetsList = file_get_contents("targets.json");
+$targetsList = file_get_contents("/home/wikincat/zbib-targets.json");
 $targets = json_decode($targetsList, true);
 
 for ($index = 0; $index < count($targets); $index++) {

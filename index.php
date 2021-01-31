@@ -142,6 +142,9 @@
                     <div class="form-group align-bottom d-flex align-items-end mr-2">
                         <a class="btn btn-link" href="https://wikincat.org/zbib/" title="Vai para a página inicial">Início</a> <a id="back-to-top-button" title="Vai para o topo"></a>
                     </div>
+                    <div class="form-group align-bottom d-flex align-items-end mr-2">
+                        <a class="btn btn-link" href="https://wikincat.org/zaut/" title="Vai para a busca de autoridade">Busca de autoridade</a>
+                    </div>
                 </div>
                 <div class="form-row <?= $searchString2!=''?'':'collapse' ?>" id="extra">
                     <div class="form-group mr-2">
@@ -176,8 +179,8 @@
                 <div class="alert alert-info" role="alert" ><?= $searchString!=''?'
 Utilize <kbd class="bg-secondary"><kbd class="bg-secondary">ctrl</kbd> + <kbd class="bg-secondary">f</kbd></kbd> para localizar dentro dos resultados.':'
 <ul style="margin-bottom: 0">
-    <li>Busque em até 5 bibliotecas por vez (são mais de 60 disponíveis).</li>
-    <li>Utilize um <a class="alert-link" data-toggle="collapse" data-target="#extra" title="Exibe ou esconde o operador booleano">operador booleano</a> para resultados mais precisos.</li>
+    <li>Busque em até 5 fontes por vez (são mais de 70 disponíveis, milhões de registros MARC);</li>
+    <li>Utilize um <a class="alert-link" data-toggle="collapse" data-target="#extra" title="Exibe ou esconde o operador booleano">operador booleano</a> para resultados mais precisos;</li>
     <li>A remoção de acentos pode trazer mais resultados.</li>
 </ul>' ?>
                 </div>
@@ -314,6 +317,9 @@ Utilize <kbd class="bg-secondary"><kbd class="bg-secondary">ctrl</kbd> + <kbd cl
         </div>
         <br>
         <footer>
+            <div class="d-flex align-items-center justify-content-center">
+                <p>Gostaria de fazer parte? <a href="mailto:jaideraf@gmail.com">Pergunte-me como!</a> 💌</p>
+            </div>
             <div class="d-flex align-items-center justify-content-center">
                 <p><a href="https://wikincat.org/" target="_blank">Wikincat</a>, 2021. Creative Commons (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR" target="_blank">CC-BY-SA 4.0</a>)</p>
             </div>

@@ -12,7 +12,7 @@ Clone this repository:
 git clone https://github.com/jaideraf/zbib.git
 ```
 
-And rename the <code>targets.json</code> file:
+And rename the <code>targets.json</code> file according to <code>$targetsList</code> variable in the <code>Z3950ClientManager.php</code> file:
 
 ```Shell
 cd zbib
